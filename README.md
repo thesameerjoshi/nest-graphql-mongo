@@ -32,6 +32,20 @@ or
 $ npm install
 ```
 
+## To Add Module, Controller or Service using Nest CLI
+
+```
+<!-- To Create Module -->
+# nest g module {module_name}
+
+<!-- To Create Controllers Layer -->
+# nest g controller {controller_name}/controllers/{controller_name}
+
+<!-- To Create Service layer -->
+# nest g controller {service_name}/controllers/{service_name}
+```
+
+
 ## Running the app
 
 ```bash
