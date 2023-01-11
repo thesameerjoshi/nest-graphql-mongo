@@ -42,7 +42,7 @@ $ npm install
 # nest g controller {controller_name}/controllers/{controller_name}
 
 <!-- To Create Service layer -->
-# nest g controller {service_name}/controllers/{service_name}
+# nest g controller {service_name}/services/{service_name}
 ```
 
 
@@ -55,9 +55,9 @@ or
 $ npm run start
 
 # watch mode
-$ yarn start:dev
+$ yarn dev
 or
-$ npm run start:dev
+$ npm run dev
 
 # production mode
 $ yarn start:prod
