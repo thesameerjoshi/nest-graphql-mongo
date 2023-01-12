@@ -38,6 +38,8 @@ $ npm install
 <!-- To Create Module -->
 # nest g module {module_name}
 
+<!-- Use --flat to generate without folder  -->
+<!-- Use --no-spec to generate without .spec file -->
 <!-- To Create Controllers Layer -->
 # nest g controller {controller_name}/controllers/{controller_name}
 
