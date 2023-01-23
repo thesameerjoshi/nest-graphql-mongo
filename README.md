@@ -44,9 +44,8 @@ $ npm install
 # nest g controller {controller_name}/controllers/{controller_name}
 
 <!-- To Create Service layer -->
-# nest g controller {service_name}/services/{service_name}
+# nest g service {service_name}/services/{service_name}
 ```
-
 
 ## Running the app
 

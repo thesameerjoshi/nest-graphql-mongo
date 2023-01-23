@@ -1,32 +1,32 @@
 import { Injectable } from '@nestjs/common';
 import { CreateUserDto } from 'src/users/dto/CreateUser.dto';
-import { User } from 'src/users/types/User';
+import { SerializedUser, User } from 'src/users/types';
 
 @Injectable()
 export class UsersService {
   private users: User[] = [
     {
       id: 1,
-      username: 'Sameer Joshi',
+      username: 'SameerJ',
       password: 'password',
       email: 'sameer@sameer.com',
     },
     {
       id: 2,
-      username: 'John Doe',
+      username: 'JohnD',
       password: 'password',
       email: 'john@sameer.com',
     },
     {
       id: 3,
-      username: 'Guest User',
+      username: 'GuestUser',
       password: 'password',
       email: 'guest@sameer.com',
     },
   ];
 
   getUsers() {
-    return this.users;
+    return this.users.map((user) => new SerializedUser(user));
   }
 
   getUsersById(id: number) {
