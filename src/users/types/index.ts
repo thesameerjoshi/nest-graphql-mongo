@@ -1,23 +1,22 @@
-import { Exclude } from 'class-transformer';
+import { Field, ID, ObjectType } from '@nestjs/graphql';
 
-export interface User {
-  id: number;
-  username: string;
-  password: string;
-  email: string;
-}
+@ObjectType('User')
+export class UserType {
+  @Field((type) => ID, { nullable: false })
+  id: string;
 
-export class SerializedUser {
-  id: number;
-  username: string;
+  @Field()
+  name: string;
 
-  @Exclude()
+  @Field()
   email: string;
 
-  @Exclude()
+  @Field()
   password: string;
 
-  constructor(partial: Partial<SerializedUser>) {
-    Object.assign(this, partial);
-  }
+  @Field()
+  createdAt: string;
+
+  @Field()
+  updatedAt: string;
 }

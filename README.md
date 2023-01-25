@@ -22,7 +22,7 @@
 
 ## Description
 
-[NestJS](https://github.com/nestjs/nest) Template with Basic CRUD Function and User Modules.
+[NestJS](https://github.com/nestjs/nest) Template with GraphQL.
 
 ## Installation
 
