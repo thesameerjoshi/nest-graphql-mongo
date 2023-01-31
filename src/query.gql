@@ -1,0 +1,63 @@
+# Get all musics
+type query {
+  musics(limit: 2) {
+    _id
+    title
+    album
+    year
+    artist
+  }
+}
+
+# Get single music
+type query {
+  music(_id: "63d607373a993a1797d2b626") {
+    title
+    artist
+    album
+    year
+  }
+}
+
+# Create Music
+type mutation {
+  createMusic(
+    createMusic: {
+      title: "The Pot"
+      artist: "TOOL"
+      album: "10 000 days"
+      year: 2006
+    }
+  ) {
+    title
+    album
+    artist
+    year
+  }
+}
+
+# Update Music
+type mutation {
+  updateMusic(
+    _id: "63d603d83a993a1797d2b600"
+    updateMusic: {
+      title: "The Pot"
+      artist: "TOOL"
+      album: "10 000 days"
+      year: 2006
+    }
+  ) {
+    title
+    album
+    artist
+    year
+  }
+}
+
+# Remove Music
+
+type mutation {
+  removeMusic(_id: "63d603d83a993a1797d2b600") {
+    title
+  }
+}
